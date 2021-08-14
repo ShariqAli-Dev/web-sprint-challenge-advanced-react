@@ -26,5 +26,6 @@ test("shows success message on submit with form details", () => {
   userEvent.type(stateLabel, "testState");
   userEvent.type(zipLabel, "12345");
   userEvent.click(submitButton);
+
   expect(screen.getByTestId("successMessage")).toBeInTheDocument();
 });
